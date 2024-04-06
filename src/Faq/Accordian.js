@@ -1,20 +1,15 @@
 import { useState } from "react";
-import ArrowDown from "../Images/arrow-down.svg";
 
 import "./Accordian.css";
 
 function Accordian() {
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState(0);
 
   const toggle = (i) => {
-    if (selected == i) {
-      return setSelected(null);
-    }
-
     setSelected(i);
   };
 
-  // const ArrowDownImg = <img src={ArrowDown} alt={ArrowDown}></img>;
+  // const ArrowDownImg = <img src={ArrowDown} alt={ArrowDown}  alt="" />;
 
   return (
     <div className="accordion">
@@ -22,15 +17,16 @@ function Accordian() {
         <div className="item">
           <div
             className={selected === i ? "title" : "title-show"}
-            onClick={() => toggle(i)}
-          >
+            onClick={() => toggle(i)}>
             <h2>{item.question}</h2>
             <span className={selected === i ? "arrow-left" : "arrow-down"}>
               &nbsp;
             </span>
           </div>
           <div className={selected === i ? "content-show" : "content"}>
+            <div className="content-text-contain">
             {item.answer}
+            </div>
           </div>
         </div>
       ))}

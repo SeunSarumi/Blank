@@ -10,8 +10,8 @@ function Section4() {
   return (
     <div className="section-4">
       <div className="container-1">
-        <div className="grid grid--2-cols grid-4">
-          <div className="container__text-box b-1">
+        <div className="grid grid--2-cols">
+          <div className="text-side container__text-box b-1">
             <h1 className="text-box__header-primary">
               The Only Card You'll Ever Need
             </h1>
@@ -22,12 +22,12 @@ function Section4() {
             </p>
             {/* Modal btn */}
             <button onClick={() => setOpenModal(true)} className="Modal-btn">
-              Get Now <img className="rocket" src={Rocket} />
+              Get Now <img className="rocket" src={Rocket} alt="" />
             </button>
             <Modal open={openModal} onClose={() => setOpenModal(false)} />
           </div>
           <div className="container__img-box-1 b-2">
-            <img className="box-img-4" src={HoldingCard}></img>
+            <img className="box-img-4" src={HoldingCard}  alt="" />
           </div>
         </div>
       </div>

@@ -1,16 +1,6 @@
 // import "./CardTabs.css";
 import "./OurServicesTab.css";
-import Addcard from "../Images/white-add-card.svg";
-import RequestCard from "../Images/white-request-card.svg";
-import CardHistory from "../Images/white-add-card.svg";
-import SuperTransfer from "../Images/white-super-transfer.svg";
-import Lottie from "lottie-react";
 import { Player } from "@lottiefiles/react-lottie-player";
-import RequestCardImg from "../Images/Transport2.json";
-import AddCardImg from "../Images/Add-cards.json";
-import CardHistoryImg from "../Images/Card-history.json";
-import SuperTransferImg from "../Images/Super-Transfer.json";
-import CardData from "./CardData";
 
 function CardTabs({ data, cardIndex }) {
   return (
@@ -24,7 +14,6 @@ function CardTabs({ data, cardIndex }) {
             loop
             autoplay
             speed={2}
-            style={{ height: "60rem", width: "60rem" }}
           />
           <p className="player-text">{item.playerText}</p>
         </div>

@@ -13,7 +13,7 @@ function Section3() {
     <div className="section-3">
       <div className="container-1 grid grid--2-cols u-margin-top">
         <div className="container__img-box-2">
-          <img className="img" src={PaymentImg}></img>
+          <img className="img" src={PaymentImg}  alt="" />
         </div>
         <div className="container__text-box">
           <h1 className="text-box__header-primary">
@@ -30,14 +30,14 @@ function Section3() {
                 className="img-container__img"
                 src={GooglePlay}
                 alt="GooglePlay"
-              ></img>
+              />
             </button>
             <button className="cooking-btn" onClick={() => setOpenModal(true)}>
               <img
                 className="img-container__img"
                 src={AppStore}
                 alt="Apple App Store"
-              ></img>
+              />
             </button>
             <CookingModal
               open={openModal}
